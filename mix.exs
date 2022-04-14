@@ -4,7 +4,7 @@ defmodule ExCrud.MixProject do
   def project do
     [
       app: :ex_crud,
-      version: "0.1.3",
+      version: "0.1.4",
       elixir: "~> 1.11",
       elixirc_paths: elixirc_paths(Mix.env()),
       elixirc_options: [warnings_as_errors: true],
@@ -24,14 +24,14 @@ defmodule ExCrud.MixProject do
     ]
   end
 
-  defp project_url, do: "https://github.com/elixir-garage/ex_crud"
+  defp project_url, do: "https://github.com/privacy-warrior/ex_crud"
 
   defp package do
     [
       files: ["lib", "mix.exs", "README*", "LICENSE*"],
       maintainers: ["Elixirgarage"],
       licenses: ["Apache License 2.0"],
-      links: %{"GitHub" => "https://github.com/elixir-garage/ex_crud"}
+      links: %{"GitHub" => "https://github.com/privacy-warrior/ex_crud"}
     ]
   end
 
