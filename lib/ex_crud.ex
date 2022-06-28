@@ -323,7 +323,7 @@ defmodule ExCrud do
       """
 
       def update(%@schema{} = item, opts) when is_struct(item) do
-        ExCrud.Utils.check_changeset_function(item.__struct__)
+        #ExCrud.Utils.check_changeset_function(item.__struct__)
 
         item.__struct__.changeset(item, opts_to_map(opts))
         |> @cont.update()
@@ -435,7 +435,7 @@ defmodule ExCrud do
         do: from(item in @schema, select: item) |> find(opts_to_map(opts), Enum.count(opts), 0)
 
       defp set_field(mod, opts) do
-        ExCrud.Utils.check_changeset_function(mod)
+        #ExCrud.Utils.check_changeset_function(mod)
 
         mod.changeset(mod.__struct__, opts_to_map(opts))
       end
